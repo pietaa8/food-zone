@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menue</title>
+    <title>Log In Page</title>
     <script src="https://kit.fontawesome.com/18777b3f13.js" crossorigin="anonymous"></script>
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b94379aac3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/pagestyle.css">
+ 
     <style>
         nav{
             display: flex;
@@ -32,7 +38,7 @@
             padding: 5px 10px;
         }
         .login-form input[type="submit"]{
-            background-color: goldenrod;
+            background-color: rgb(101, 155, 19);
             border: 0;
             border-radius: 5px;
             color: whitesmoke;
@@ -43,12 +49,12 @@
 <body>
     <header>
         <nav>
-            <span>
-                <a href="">Home</a>
+            <span style="margin-top: 35px;">
+                
                 <a href="">Dashboard</a>
                 <a href="">Category</a>
             </span>
-            <span>
+            <span style="margin-top: 35px;">
                 <a href=""><i class="fa-solid fa-right-from-bracket"></i></a>
                 <a href=""><i class="fa-solid fa-user"></i></a>
             </span>
@@ -56,12 +62,27 @@
         </nav>
     </header>
     <section class="login-container">
-        <form class="login-form">
-            <h3>Please Login</h3> <!-- as h3 is a block , it will show in different block or line -->
+        <form style="margin-top: 25px;" class="login-form">
+            <h3>Please Log In</h3> <!-- as h3 is a block , it will show in different block or line -->
             <input type="email" name="" id="" placeholder="Your Email" required> 
             <input type="password" name="" id=""placeholder="Password" required> 
             <input type="submit" value="Login">
         </form>
+        </section>
+        <section>
+        <div class="signs">
+            
+                <h3 class="sign-active">If you don't have an account </h3>
+                <!-- <li class="passive"><a href="#">Sign Up</a></li> -->
+                <a href="file:///C:\Projects\Website\signup.html">
+
+                    <button style="margin-top: 25px;" class="ms-5 btn btn-outline-success" type="consultation">Sign Up</button>
+                    </a> 
+
+          </div>
     </section>
+          <!-- bootstrap js -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
