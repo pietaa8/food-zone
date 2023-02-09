@@ -20,7 +20,7 @@ ul li{
 ul li a{
     text-decoration: none;
     color: greenyellow;
-    padding: 5px 20px;
+    padding: 7px 20px;
     border: 1px solid transparent;
 }
 ul li a:hover{
