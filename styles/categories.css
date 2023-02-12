@@ -43,37 +43,37 @@ header{
     color: #FFF;
     padding: 20px;
     text-align: center;
-    
+    margin-top: 30px;
 }
 header h1{
     margin: 0;
 }
 
 nav{
-    background-color: #333;
-    color: #FFF;
+     background-color: #333;
+    color: #FFF; 
     display: flex;
     justify-content: center;
 }
-nav ul{
+ nav ul{
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-}
-nav li{
+} 
+ nav li{
     margin: 0 10px;
-}
+} 
 nav a{
     color: #FFF;
     display: block;
     padding: 10px;
     text-decoration: none;
 }
-nav a:hover{
+/* nav a:hover{
     background-color: #CCC;
     color: #333;
-}
+} */
 
 main{
     max-width: 800px;
@@ -85,8 +85,13 @@ section{
     background-color: #d3f99d;
     color: #333;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-radius: 35px;
+    margin-top: 30px;
+}
+section:hover{
+    box-shadow: 0 0 10px #333;
+    transform: translateY(-5px);
 }
 
 section h2{
