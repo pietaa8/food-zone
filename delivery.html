@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Page</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: lightblue;
+            padding: 20px;
+            text-align: center;
+        }
+        nav{
+            background-color: gray;
+            display: flex;
+            justify-content: center;
+        }
+        nav a{
+            color: white;
+            display: block;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        section{
+            background-color: lightgray;
+            padding: 20px;
+            width: 30%;
+        }
+        footer{
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delivery Page</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#order">Order</a></li>
+            <li><a href="#delivery">Delivery</a></li>
+            <li><a href="#payment">Payment</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="order">
+            <h2>Order Information</h2>
+            <form action="submit-order.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <textarea name="address" id="address" required></textarea><br>
+            <input type="address" id="address" name="address" required>
+            </form>
+
+        </section>
+        <section id="delivery">
+            <h2>Delivery Information</h2>
+            <p>Your order will be placed</p>
+        </section>
+        <section id="Payment">
+            <h2>Payment Information</h2>
+            <p>Your order will be placed</p>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy;2023 Delivery Page</p>
+    </footer>
+    
+</body>
+</html>
