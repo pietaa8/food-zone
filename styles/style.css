@@ -65,3 +65,41 @@ ul li.active a{
     background-color: palegoldenrod;
     color: black;
 }
+
+.menu-icon{
+    display: inline-block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    position: relative;
+  
+}
+.menu-icon{
+    float: left;
+    margin-left: 29px;
+    margin-top: 30px;
+}
+
+.menu-icon-line {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: greenyellow;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.menu-icon-line:nth-of-type(1) {
+  transform: translateY(-6px);
+}
+
+.menu-icon-line:nth-of-type(2) {
+  transform: translateY(0);
+}
+
+.menu-icon-line:nth-of-type(3) {
+  transform: translateY(6px);
+}
+
