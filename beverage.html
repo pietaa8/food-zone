@@ -21,7 +21,7 @@
             padding: 0 20px;
         }
         header{
-            background-color: aliceblue;
+            background-color: rgb(255, 251, 205);
             color: #ab2b2b;
             padding: 20px;
             text-align: center;
@@ -29,15 +29,22 @@
         #beverage{
             padding: 40px 0;
             background-color: azure;
+            background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Website/images/coffelatte.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; 
         }
         .beverage-item{
-            background-color: #fff;
+            background-color: #fcf9b9;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
             margin-bottom: 30px;
         }
+        .beverage-item:hover{
+         box-shadow: 0 0 20px #333;
+         transform: translateY(-5px);
+       }
         .beverage-item img{
             width: 150px;
             height: 150px;

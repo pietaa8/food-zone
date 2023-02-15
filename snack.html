@@ -13,7 +13,7 @@
         }
         body{
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
+            font-size: 16px;       
         }
         .container{
             max-width: 1200px;
@@ -21,24 +21,30 @@
             padding: 0 20px;
         }
         header{
-            background-color: aliceblue;
-            color: #ffbc82;
+            background-color: rgb(246, 252, 142);
+            color: #da985e;
             padding: 20px;
             text-align: center;
-            
         }
         #snack{
             padding: 40px 0;
-            background-color: azure;
+            background-color: rgb(246, 252, 142);
+            background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Website/images/pizza.jpg);
+            background-repeat: no-repeat;
+            background-size: cover; 
         }
         .snack-item{
-            background-color: #fff;
+            background-color: #f7f7a3;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
             margin-bottom: 30px;
         }
+        .snack-item:hover{
+         box-shadow: 0 0 20px #333;
+         transform: translateY(-5px);
+       }
         .snack-item img{
             width: 150px;
             height: 150px;
@@ -100,6 +106,22 @@
                     add your favorite snack to your cart as many as you like</p>
                     <p class="price">120 tk</p>
                     <button>Add to cart</button> 
+            </div>
+            <div class="snack-item">
+                <img src="images/muffin.jpg" alt="Snack Item">
+                <h2>Muffin</h2>
+                <p>Description of the snack goes here. From this section you can
+                    add your favorite snack to your cart as many as you like</p>
+                    <p class="price">190 tk</p>
+                    <button>Add to cart</button>
+            </div>
+            <div class="snack-item">
+                <img src="images/anotherpizza.jpg" alt="Snack Item">
+                <h2>Pizza</h2>
+                <p>Description of the snack goes here. From this section you can
+                    add your favorite snack to your cart as many as you like</p>
+                    <p class="price">190 tk</p>
+                    <button>Add to cart</button>
             </div>
         </div>
     </section>

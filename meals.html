@@ -21,24 +21,33 @@
             padding: 0 20px;
         }
         header{
-            background-color: aliceblue;
-            color: #ffbc82;
+            background-color: rgb(165, 141, 136);
+            color: #ffcfa4;
             padding: 20px;
             text-align: center;
             
         }
+   
         #meals{
             padding: 40px 0;
-            background-color: azure;
+            background-color: rgb(184, 162, 156);
+            /* background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Website/images/steak.jpg); */
+            background-image: url("images/steakonfire.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
         }
         .meals-item{
-            background-color: #fff;
+            background-color: #c9a186;
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             padding: 20px;
             text-align: center;
             margin-bottom: 30px;
         }
+        .meals-item:hover{
+         box-shadow: 0 0 20px #333;
+         transform: translateY(-5px);
+       }
         .meals-item img{
             width: 150px;
             height: 150px;
@@ -86,16 +95,24 @@
     <section id="meals">
         <div class="container">
             <div class="meals-item">
-                <img src="images/cheeseburger.jpg" alt="Meals Item">
-                <h2>Cheeseburger</h2>
+                <img src="images/cashewnut.jpeg" alt="Meals Item">
+                <h2>Cashew Nut Salad</h2>
                 <p>Description of the meals goes here. From this section you can
                     add your favorite meals to your cart as many as you like</p>
                     <p class="price">190 tk</p>
                     <button>Add to cart</button>
             </div>
             <div class="meals-item">
-                <img src="images/pancake.jpg" alt="Meals Item">
-                <h2>Pancakes</h2>
+                <img src="images/biriyani.jpg" alt="Meals Item">
+                <h2>Biriyani</h2>
+                <p>Description of the meals goes here. From this section you can
+                    add your favorite meals to your cart as many as you like</p>
+                    <p class="price">120 tk</p>
+                    <button>Add to cart</button> 
+            </div>
+            <div class="meals-item">
+                <img src="images/steakwithfries.jpg" alt="Meals Item">
+                <h2>Steak</h2>
                 <p>Description of the meals goes here. From this section you can
                     add your favorite meals to your cart as many as you like</p>
                     <p class="price">120 tk</p>
