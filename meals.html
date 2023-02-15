@@ -5,53 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meals Page</title>
-    <link rel="stylesheet" href="styles/meals.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header{
+            background-color: aliceblue;
+            color: #ffbc82;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        #meals{
+            padding: 40px 0;
+            background-color: azure;
+        }
+        .meals-item{
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .meals-item img{
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        .meals-item h2{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .meals-item p{
+            margin-bottom: 10px;
+        }
+        .meals-item .price{
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .meals-item button{
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .meals-item button:hover{
+            background-color: #fff;
+            color: #333;
+        }
+        footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Our Meals</h1>
+        <h1>Meals</h1>
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#breakfast">Breakfast</a></li>
-            <li><a href="#lunch">Lunch</a></li>
-            <li><a href="#dinner">Dinner</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Breakfast</h2>
-            <p>Start your day with our nutritious and tasty breakfast options:</p>
-            <ul>
-                <li>Eggs Benedict</li>
-                <li>Pancakes with syrup</li>
-                <li>Bacon and Eggs</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Lunch</h2>
-            <p>Start your day with our nutritious and tasty lunch options:</p>
-            <ul>
-                <li>Caesar Salad</li>
-                <li>Pancakes with syrup</li>
-                <li>Bacon and Eggs</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Dinner</h2>
-            <p>Start your day with our nutritious and tasty dinner options:</p>
-            <ul>
-                <li>Steak with roasted vegetables</li>
-                <li>Pancakes with syrup</li>
-                <li>Bacon and Eggs</li>
-            </ul>
-        </section>
-
-    </main>
+    
+    <section id="meals">
+        <div class="container">
+            <div class="meals-item">
+                <img src="images/cheeseburger.jpg" alt="Meals Item">
+                <h2>Cheeseburger</h2>
+                <p>Description of the meals goes here. From this section you can
+                    add your favorite meals to your cart as many as you like</p>
+                    <p class="price">190 tk</p>
+                    <button>Add to cart</button>
+            </div>
+            <div class="meals-item">
+                <img src="images/pancake.jpg" alt="Meals Item">
+                <h2>Pancakes</h2>
+                <p>Description of the meals goes here. From this section you can
+                    add your favorite meals to your cart as many as you like</p>
+                    <p class="price">120 tk</p>
+                    <button>Add to cart</button> 
+            </div>
+        </div>
+    </section>
     <footer>
-        <p>Copyright &copy; 2023</p>
-        
+        <p>&copy; 2023 meals Company</p>
     </footer>
 </body>
 </html>
