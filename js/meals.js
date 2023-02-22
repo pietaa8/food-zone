@@ -95,11 +95,9 @@ function displayData(nameOfP, priceOfP, quantityOfp, resultP) {
     <td>${priceOfP}</td>
     <td>${quantityOfp}</td>
     <td>${resultP}</td>
-    <td>
-    <button class="btn btn-sm btn-red-500">Square</button>
-    </td>
     
-  `;
+    `;
+
   container.appendChild(tr);
   document.getElementById("total-product").innerText = serial;
 }
