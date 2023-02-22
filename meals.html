@@ -1,127 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meals Page</title>
-    <style>
-        *{
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 16px;
-        }
-        .container{
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        header{
-            background-color: rgb(165, 141, 136);
-            color: #ffcfa4;
-            padding: 20px;
-            text-align: center;
-            
-        }
-   
-        #meals{
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+            #meals{
             padding: 40px 0;
             background-color: rgb(184, 162, 156);
-            /* background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Website/images/steak.jpg); */
             background-image: url("images/steakonfire.jpg");
             background-repeat: no-repeat;
             background-size: cover; 
         }
-        .meals-item{
-            background-color: #f9cbae;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .meals-item:hover{
-         box-shadow: 0 0 20px #333;
-         transform: translateY(-5px);
-       }
-        .meals-item img{
-            width: 150px;
-            height: 150px;
-            margin-bottom: 20px;
-        }
-        .meals-item h2{
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .meals-item p{
-            margin-bottom: 10px;
-        }
-        .meals-item .price{
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-        .meals-item button{
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            padding: 10px 20px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .meals-item button:hover{
-            background-color: #fff;
-            color: #333;
-        }
-        footer{
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Meals</h1>
-    </header>
-    
-    <section id="meals">
-        <div class="container">
-            <div class="meals-item">
-                <img src="images/cashewnut.jpeg" alt="Meals Item">
-                <h2>Cashew Nut Salad</h2>
-                <p>Description of the meals goes here. From this section you can
-                    add your favorite meals to your cart as many as you like</p>
-                    <p class="price">190 tk</p>
-                    <button>Add to cart</button>
+
+  </style>
+  <body>
+     
+    <main>
+      <section id="meals" class="lg:px-12 flex flex-col md:flex-row lg:flex-row">
+        <div
+          class="products-cetails w-full md:w-[60%] lg:w-[60%] mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-6" >
+          <!-- first card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="./images/cashewnut.jpeg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="first-name">Cashew Nut Salad</h2>
+              <!-- <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Labore, omnis.
+              </p> -->
+              <p>Price: $<span id="first-price">110</span></p>
+              <p>Quantity: <span id="first-quantity">5</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary" id="first-card">
+                  Add to Cart
+                </button>
+              </div>
             </div>
-            <div class="meals-item">
-                <img src="images/biriyani.jpg" alt="Meals Item">
-                <h2>Biriyani</h2>
-                <p>Description of the meals goes here. From this section you can
-                    add your favorite meals to your cart as many as you like</p>
-                    <p class="price">120 tk</p>
-                    <button>Add to cart</button> 
+          </div>
+
+          <!-- second card  -->
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="./images/cashewnut.jpeg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="second-name">Cashew Nut Salad</h2>
+             
+              <p>Price: $<span id="second-price">110</span></p>
+              <p>Quantity: <span id="second-quantity">5</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary" id="second-card">
+                  Add to Cart
+                </button>
+              </div>
             </div>
-            <div class="meals-item">
-                <img src="images/steakwithfries.jpg" alt="Meals Item">
-                <h2>Steak</h2>
-                <p>Description of the meals goes here. From this section you can
-                    add your favorite meals to your cart as many as you like</p>
-                    <p class="price">120 tk</p>
-                    <button>Add to cart</button> 
+          </div>
+
+          <!-- third card  -->
+          
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="./images/cashewnut.jpeg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="third-name">Cashew Nut Salad</h2>
+             
+              <p>Price: $<span id="third-price">110</span></p>
+              <p>Quantity: <span id="third-quantity">5</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary" id="third-card">
+                  Add to Cart
+                </button>
+              </div>
             </div>
+          </div>
+
+          <!-- fourth card  -->
+         
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="./images/cashewnut.jpeg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="fourth-name">Cashew Nut Salad</h2>
+             
+              <p>Price: $<span id="fourth-price">110</span></p>
+              <p>Quantity: <span id="fourth-quantity">5</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary" id="fourth-card">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- fifth card  -->
+         
+          <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="./images/cashewnut.jpeg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="fifth-name">Steak</h2>
+              
+              <p>Price: $<span id="fifth-price">110</span></p>
+              <p>Quantity: <span id="fifth-quantity">5</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary" id="fifth-card">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- last card  -->
+
+        <div class="card card-compact w-full bg-base-100 shadow-xl">
+            <figure>
+              <img class="w-full h-40" src="./images/cashewnut.jpeg" alt="Shoes" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title" id="last-name">Cashew Nut Salad</h2>
+             
+              <p>Price: $<span id="last-price">110</span></p>
+              <p>Quantity: <span id="last-quantity">5</span></p>
+              <div class="card-actions justify-end">
+                <button class="btn btn-primary" id="last-card">
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <footer>
-        <p>&copy; 2023 meals Company</p>
-    </footer>
-</body>
+
+        <!-- cart details div  -->
+        <div class="cart-details w-full md:w-[40%] lg:w-[33%] mx-auto">
+          <h1 style="color: beige;" class="text-3xl text-center font-bold underline mt-20">
+            ToTal Products: <span id="total-product">0</span>
+          </h1>
+          <div class="overflow-x-auto">
+            <table class="table w-full">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Quantity</th>
+                  <th>Total</th>
+                </tr>
+              </thead>
+              <tbody id="table-container">
+                <!-- <tr>
+                  <th>1</th>
+                  <td>Cy Ganderton</td>
+                  <td>Quality Control Specialist</td>
+                  <td>Blue</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/meals.js"></script>
+  </body>
 </html>
