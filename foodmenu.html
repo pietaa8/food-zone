@@ -193,7 +193,7 @@ button:hover{
             <div id="cartItem">Your cart is empty</div>
             <div class="foot">
                 <h3>Total</h3>
-                <h2 id="total">$ 0.00</h2>
+                <h2 id="total"> 0.00 tk</h2>
             </div>
             
                 <a href="file:///C:/Projects/Website/payment.html"><button>Place Order</button> </a>
@@ -209,7 +209,7 @@ button:hover{
         id: 0,
         image: 'images/cashewnut.jpeg',
         title: 'Cashew Nut Salad',
-        price: 120,
+        price: 450,
     },
     {
         id: 1,
@@ -250,7 +250,7 @@ button:hover{
     {
         id: 7,
         image: 'images/muffin.jpg',
-        title: 'Muffin',
+        title: 'Choco Muffin',
         price: 159,
     },
     {
@@ -279,7 +279,7 @@ document.getElementById('root').innerHTML = categories.map((item)=>
             </div>
         <div class='bottom'>
         <p>${title}</p>
-        <h2>$ ${price}.00</h2>`+
+        <h2> ${price}.00 tk</h2>`+
         "<button onclick='addtocart("+(i++)+")'>Add to cart</button>"+
         `</div>
         </div>`
@@ -302,21 +302,21 @@ function displaycart(){
     document.getElementById("count").innerHTML=cart.length;
     if(cart.length==0){
         document.getElementById('cartItem').innerHTML = "Your cart is empty";
-        document.getElementById("total").innerHTML = "$ "+0+".00";
+        document.getElementById("total").innerHTML = 0+".00" + " tk ";
     }
     else{
         document.getElementById("cartItem").innerHTML = cart.map((items)=>
         {
             var {image, title, price} = items;
             total=total+price;
-            document.getElementById("total").innerHTML = "$ "+total+".00";
+            document.getElementById("total").innerHTML = total+".00"+" tk ";
             return(
                 `<div class='cart-item'>
                 <div class='row-img'>
                     <img class='rowimg' src=${image}>
                 </div>
                 <p style='font-size:12px;'>${title}</p>
-                <h2 style='font-size: 15px;'>$ ${price}.00</h2>`+
+                <h2 style='font-size: 15px;'>tk ${price}.00</h2>`+
                 "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i></div>"
             );
         }).join('');
